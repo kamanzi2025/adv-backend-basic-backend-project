@@ -7,7 +7,7 @@ const routes = (req, res) => {
   if (req.url === '/') homeController(req, res);
   else if (req.url === '/about') aboutController(req, res);
   else if (req.url === '/data') dataController(req, res);
-  else if (req.url.startsWith('/greet')) greetController(req, res);
+  else if (req.url.split('?')[0] === '/greet') greetController(req, res);
   else {
     res.writeHead(404, { 'Content-Type': 'text/plain' });
     res.end('Page not found');
