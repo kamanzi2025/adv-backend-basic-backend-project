@@ -2,6 +2,17 @@
 
 Welcome to your first backend development activity. In this lab, you will build a functional web server from scratch using Node.js—without external frameworks like Express.
 
+## How to run
+
+1. Make sure Node.js is installed (`node -v`).
+2. In this folder, run: `npm start`
+3. Open http://localhost:3000 and try:
+   - `/` – plain text greeting
+   - `/about` – about page
+   - `/data` – JSON response
+   - `/greet?name=YourName` – personalised greeting
+   - any other route – 404 "Page not found"
+
 ## Learning Objectives
 By the end of this activity, you will be able to:
 - Initialize a Node.js project.
